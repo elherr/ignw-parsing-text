@@ -12,3 +12,14 @@
 
     - debug:
         var: version
+        
+  tasks:
+    - name: Output device information
+      ansible.netcommon.cli_parse:
+        command: show interfaces
+        parser:
+          name: ansible.netcommon.native
+        set_fact: interfaces_fact
+
+    - debug:
+        var: interfaces
