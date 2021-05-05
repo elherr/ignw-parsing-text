@@ -1,3 +1,4 @@
+---
 - example: GigabitEthernet0/0 is up, line protocol is up 
   getval: "(?P<name>GigabitEthernet\\S+|Loopback\\S) is"
   result:
