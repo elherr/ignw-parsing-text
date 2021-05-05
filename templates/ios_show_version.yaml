@@ -4,7 +4,7 @@
   result:
     sn: "{{ serial_number }}"
 - example: IOS-1 uptime is 11 hours, 25 minutes
-  getval: "\\S+ uptime is (?P<hrs>[0-9]{1,3}) hours, (?P<min>[0-9]{1,2}) minutes"
+  getval: "\\S+ uptime is ([0-9]{1,3}) days, (?P<hrs>[0-9]{1,3}) hours, (?P<min>[0-9]{1,2}) minutes"
   result:
     uptime:
       hours: "{{ hrs }}"
