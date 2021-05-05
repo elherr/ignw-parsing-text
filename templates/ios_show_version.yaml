@@ -1,0 +1,5 @@
+---
+- example: Processor board ID 9VN64EUS4TR5CM1KRP9YD
+  getval: "Processor board ID (?P<serial_number>[0-9A-Z]+)"
+  result:
+    sn: "{{ serial_number }}
