@@ -19,7 +19,7 @@
         command: show interfaces
         parser:
           name: ansible.netcommon.native
-        set_fact: interfaces_fact
+        set_fact: interface_type
 
     - debug:
-        var: interfaces
+        var: interface_type
