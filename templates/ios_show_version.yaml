@@ -3,3 +3,10 @@
   getval: "Processor board ID (?P<serial_number>[0-9A-Z]+)"
   result:
     sn: "{{ serial_number }}"
+- example: IOS-1 uptime is 11 hours, 25 minutes
+  getval: "\\S+ uptime is (?P<hrs>[0-9]{1,3}) hours, (?P<min>[0-9]{1,2}) minutes"
+  result:
+    uptime:
+      hours: "{{ hrs }}"
+      minutes: "{{ min }}"
+
