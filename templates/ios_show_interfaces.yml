@@ -1,0 +1,12 @@
+- example: GigabitEthernet0/0 is up, line protocol is up 
+  getval: "(?P<name>GigabitEthernet\\S+|Loopback\\S) is"
+  result:
+    "{{ name }}":
+      name: "{{ name }}"
+  shared: true
+
+- example:   Hardware is iGbE, address is 
+  getval: "  Hardware is (?P<type>\\w+)"
+  result:
+    "{{ name }}":
+      hardware_type: "{{ type }}"
