@@ -13,7 +13,6 @@
     - debug:
         var: version
         
-  tasks:
     - name: Output interface type
       ansible.netcommon.cli_parse:
         command: show interfaces
