@@ -1,0 +1,11 @@
+[all:vars]
+ansible_connection=ansible.netcommon.network_cli
+
+[Cisco]
+192.168.255.10
+192.168.255.11
+
+[Cisco:vars]
+ansible_network_os=ios
+ansible_user=ignw
+ansible_password=ignw
